@@ -1,0 +1,52 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-06-13T16:06:17.0520000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "CHASSIS_x0020_CODE": "CHASSIS CODE",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Customer_x0020_target_x0020_SMV": "Customer target SMV",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "Image": "Image",
+      "MAS_x0020_shared_x0020_SMV": "MAS shared SMV",
+      "MAS_x0020_SMV_x0020_With_x0020_c": "MAS SMV With cut marks",
+      "MASNewSMVWithoutcutmark": "\"MAS New SMV Without cut mark\"",
+      "Master_x0020_style_x0020_GSD": "Master style GSD",
+      "Modified": "Modified",
+      "New_x0020_Master_x0020_Style_x00": "New Master Style GSD",
+      "OData__ColorTag": "Color Tag",
+      "Title": "Title"
+    },
+    "DatasetName": "https://massl.sharepoint.com/sites/LineaIntimo/IEDigitalization",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Sewing SMV validation in MAS Seamless",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

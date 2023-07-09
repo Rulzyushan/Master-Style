@@ -1,0 +1,1011 @@
+"'CREATE NEW CHASSI CODE_2' As screen":
+    Fill: =RGBA(153, 160, 196, 1)
+
+    Label1_6 As label:
+        Align: =Align.Center
+        Color: =RGBA(102, 102, 102, 1)
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =25
+        Text: ="Chassis Code"
+        Width: =1292
+        X: =40
+        Y: =20
+        ZIndex: =1
+
+    "GallerySilhouetteIndex As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderThickness: =1
+        Height: =571
+        Items: ='Master Style - Index'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =197
+        Width: =873
+        X: =459
+        Y: =138
+        ZIndex: =3
+
+        Title2_3 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="1"&"."&ThisItem.'Index 01'.Value
+            X: =14
+            Y: =13
+            ZIndex: =1
+
+        NextArrow2_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Master Style - Index',ThisItem)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =813
+            Y: =102
+            ZIndex: =3
+
+        Separator3_3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Title2_4 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="2"&"."&ThisItem.'Index 02'.Value
+            X: =187
+            Y: =13
+            ZIndex: =5
+
+        Title2_5 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="3"&"."&ThisItem.'Index 03'.Value
+            X: =361
+            Y: =13
+            ZIndex: =6
+
+        Title2_6 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="4"&"."&ThisItem.'Index 04'.Value
+            X: =533
+            Y: =13
+            ZIndex: =7
+
+        Title2_7 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="9"&"."&ThisItem.'Index 09'.Value
+            X: =14
+            Y: =132
+            ZIndex: =8
+
+        Title2_8 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="5"&"."&ThisItem.'Index 05'.Value
+            X: =14
+            Y: =72
+            ZIndex: =9
+
+        Title2_9 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="6"&"."&ThisItem.'Index 06'.Value
+            X: =187
+            Y: =72
+            ZIndex: =10
+
+        Title2_10 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="7"&"."&ThisItem.'Index 07'.Value
+            X: =361
+            Y: =72
+            ZIndex: =11
+
+        Title2_11 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="8"&"."&ThisItem.'Index 08'.Value
+            X: =533
+            Y: =72
+            ZIndex: =12
+
+        Title2_12 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="10"&"."&ThisItem.'Index 10'.Value
+            X: =187
+            Y: =132
+            ZIndex: =13
+
+    Label1_7 As label:
+        Align: =Align.Center
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(3, 130, 113, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =20
+        Text: ="Arrange To Chassis Order"
+        Width: =1290
+        X: =42
+        Y: =94
+        ZIndex: =4
+
+    FormSilhouetteIndex As form:
+        BorderThickness: =1
+        DataSource: ='Master Style - Index'
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =571
+        NumberOfColumns: =2
+        Width: =417
+        X: =42
+        Y: =138
+        ZIndex: =5
+
+        "'Index 01_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_01"
+            Default: =ThisItem.'Index 01'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_01")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue41.Selected
+            Width: =208
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+            DataCardKey42 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue41 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 01')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 01',DataCardValue41.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
+                ZIndex: =2
+
+            ErrorMessage42 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue41.Y + DataCardValue41.Height
+                ZIndex: =3
+
+        "'Index 02_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_02"
+            Default: =ThisItem.'Index 02'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_02")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue42.Selected
+            Width: =208
+            X: =1
+            Y: =0
+            ZIndex: =11
+
+            DataCardKey43 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue42 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 02')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 02',DataCardValue42.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey43.Y + DataCardKey43.Height + 5
+                ZIndex: =2
+
+            ErrorMessage43 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue42.Y + DataCardValue42.Height
+                ZIndex: =3
+
+        "'Index 03_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_03"
+            Default: =ThisItem.'Index 03'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_03")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue43.Selected
+            Width: =208
+            X: =0
+            Y: =1
+            ZIndex: =11
+
+            DataCardKey44 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue43 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 03')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 03',DataCardValue43.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey44.Y + DataCardKey44.Height + 5
+                ZIndex: =2
+
+            ErrorMessage44 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue43.Y + DataCardValue43.Height
+                ZIndex: =3
+
+            StarVisible44 As label:
+                Align: =Align.Center
+                Height: =DataCardKey44.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey44.Y
+                ZIndex: =4
+
+        "'Index 04_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_04"
+            Default: =ThisItem.'Index 04'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_04")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue44.Selected
+            Width: =208
+            X: =1
+            Y: =1
+            ZIndex: =11
+
+            DataCardKey45 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue44 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 04')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 04',DataCardValue44.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey45.Y + DataCardKey45.Height + 5
+                ZIndex: =2
+
+            ErrorMessage45 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue44.Y + DataCardValue44.Height
+                ZIndex: =3
+
+            StarVisible45 As label:
+                Align: =Align.Center
+                Height: =DataCardKey45.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey45.Y
+                ZIndex: =4
+
+        "'Index 05_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_05"
+            Default: =ThisItem.'Index 05'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_05")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue45.Selected
+            Width: =208
+            X: =0
+            Y: =2
+            ZIndex: =11
+
+            DataCardKey46 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue45 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 05')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 05',DataCardValue45.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey46.Y + DataCardKey46.Height + 5
+                ZIndex: =2
+
+            ErrorMessage46 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue45.Y + DataCardValue45.Height
+                ZIndex: =3
+
+            StarVisible46 As label:
+                Align: =Align.Center
+                Height: =DataCardKey46.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey46.Y
+                ZIndex: =4
+
+        "'Index 06_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_06"
+            Default: =ThisItem.'Index 06'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_06")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue46.Selected
+            Width: =208
+            X: =1
+            Y: =2
+            ZIndex: =11
+
+            DataCardKey47 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue46 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 06')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 06',DataCardValue46.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey47.Y + DataCardKey47.Height + 5
+                ZIndex: =2
+
+            ErrorMessage47 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue46.Y + DataCardValue46.Height
+                ZIndex: =3
+
+            StarVisible47 As label:
+                Align: =Align.Center
+                Height: =DataCardKey47.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey47.Y
+                ZIndex: =4
+
+        "'Index 07_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_07"
+            Default: =ThisItem.'Index 07'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_07")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue47.Selected
+            Width: =208
+            X: =0
+            Y: =3
+            ZIndex: =11
+
+            DataCardKey48 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue47 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 07')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 07',DataCardValue47.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey48.Y + DataCardKey48.Height + 5
+                ZIndex: =2
+
+            ErrorMessage48 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue47.Y + DataCardValue47.Height
+                ZIndex: =3
+
+            StarVisible48 As label:
+                Align: =Align.Center
+                Height: =DataCardKey48.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey48.Y
+                ZIndex: =4
+
+        "'Index 08_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_08"
+            Default: =ThisItem.'Index 08'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_08")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue48.Selected
+            Width: =208
+            X: =1
+            Y: =3
+            ZIndex: =11
+
+            DataCardKey49 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue48 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 08')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 08',DataCardValue48.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey49.Y + DataCardKey49.Height + 5
+                ZIndex: =2
+
+            ErrorMessage49 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue48.Y + DataCardValue48.Height
+                ZIndex: =3
+
+            StarVisible49 As label:
+                Align: =Align.Center
+                Height: =DataCardKey49.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey49.Y
+                ZIndex: =4
+
+        "'Index 09_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_09"
+            Default: =ThisItem.'Index 09'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_09")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue49.Selected
+            Width: =208
+            X: =0
+            Y: =4
+            ZIndex: =11
+
+            DataCardKey50 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue49 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 09')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 09',DataCardValue49.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                ZIndex: =2
+
+            ErrorMessage50 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue49.Y + DataCardValue49.Height
+                ZIndex: =3
+
+            StarVisible50 As label:
+                Align: =Align.Center
+                Height: =DataCardKey50.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey50.Y
+                ZIndex: =4
+
+        "'Index 10_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Index_x0020_10"
+            Default: =ThisItem.'Index 10'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Index'],DataSourceInfo.DisplayName,"Index_x0020_10")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue50.Selected
+            Width: =208
+            X: =1
+            Y: =4
+            ZIndex: =11
+
+            DataCardKey51 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue50 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Index'].'Index 10')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Index'.'Index 10',DataCardValue50.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey51.Y + DataCardKey51.Height + 5
+                ZIndex: =2
+
+            ErrorMessage51 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue50.Y + DataCardValue50.Height
+                ZIndex: =3
+
+            StarVisible51 As label:
+                Align: =Align.Center
+                Height: =DataCardKey51.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey51.Y
+                ZIndex: =4
+
+    Group6_3 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =8
+
+        Button5_6 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =ResetForm(FormSilhouetteIndex);NewForm(FormSilhouetteIndex)
+            Size: =13
+            Text: ="Add New"
+            Width: =92
+            X: =210
+            Y: =652
+            ZIndex: =6
+
+        Button5_4 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =SubmitForm(FormSilhouetteIndex);NewForm(FormSilhouetteIndex);Refresh('Master Style - Index')
+            Size: =13
+            Text: ="Save"
+            Width: =92
+            X: =339
+            Y: =652
+            ZIndex: =7
+
+    Icon4_2 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('CREATE NEW CHASSI CODE_1')
+        Width: =35
+        X: =55
+        Y: =33
+        ZIndex: =12
+
+    DigitalizationImages_2 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =12
+
+        Image3_3 As image:
+            DisplayMode: =DisplayMode.View
+            Height: =101
+            Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+            Width: =171
+            X: =829
+            ZIndex: =8
+
+        Label2_59 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            Size: =12
+            Text: ="Designed by "
+            Visible: = true
+            X: =1170
+            Y: =688
+            ZIndex: =9
+
+        Label2_58 As label:
+            Align: =Align.Right
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            Text: ="IE DIGITALIZATION"
+            Width: =180
+            X: =1138
+            Y: =718
+            ZIndex: =10
+
+        Label2_57 As label:
+            Align: =Align.Right
+            Color: =RGBA(179, 179, 179, 1)
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            Size: =16
+            Text: ="ACTIVE Linea Intimo - IE"
+            Width: =270
+            X: =1000
+            Y: =43
+            ZIndex: =11
+
+    Icon4_5 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate('CREATE NEW CHASSI CODE_3')
+        Width: =35
+        X: =103
+        Y: =33
+        ZIndex: =13
+
+    Icon4_7 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.Home
+        OnSelect: =Navigate(ACCESS)
+        Width: =35
+        X: =156
+        Y: =33
+        ZIndex: =14
+
+    Icon5_13 As icon.CancelBadge:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1290
+        Y: =20
+        ZIndex: =15
+

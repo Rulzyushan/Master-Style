@@ -1,0 +1,28 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =Refresh('Sewing SMV validation in MAS Seamless');
+        Refresh('Master Style - Index');
+        Refresh('Master Style - Silhouette');
+        Refresh('Master Style - Silhouette Part');
+        Refresh('Master Style - Silhouette/Part/Operation');
+        Refresh('IE Department Name list');
+        
+        ClearCollect(TestData,'Sewing SMV validation in MAS Seamless');
+        ClearCollect(TestDataIndex,'Master Style - Index');
+        ClearCollect(TestDataSilhouette,'Master Style - Silhouette');
+        ClearCollect(TestDataSilhouettePart,'Master Style - Silhouette Part');
+        ClearCollect(TestDataSilhouetteOperation,'Master Style - Silhouette/Part/Operation');
+        
+        
+        
+        
+    StartScreen: =ACCESS
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

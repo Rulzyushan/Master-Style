@@ -1,0 +1,594 @@
+"'CREATE NEW CHASSI CODE_1' As screen":
+    Fill: =RGBA(153, 160, 196, 1)
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(102, 102, 102, 1)
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =25
+        Text: ="Chassis Code"
+        Width: =1292
+        X: =40
+        Y: =20
+        ZIndex: =1
+
+    "GallerySilhouette As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderThickness: =1
+        Height: =570
+        Items: ='Master Style - Silhouette'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =66
+        Width: =333
+        X: =339
+        Y: =139
+        ZIndex: =1
+
+        Title2 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Silhouette
+            Width: =200
+            X: =14
+            Y: =13
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.'Silhouette Code'
+            Width: =44
+            X: =224
+            Y: =13
+            ZIndex: =2
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Master Style - Silhouette',ThisItem)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    FormSilhouette As form:
+        BorderThickness: =1
+        DataSource: ='Master Style - Silhouette'
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =570
+        NumberOfColumns: =1
+        Width: =297
+        X: =42
+        Y: =139
+        ZIndex: =2
+
+        Silhouette_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette"
+            Default: =ThisItem.Silhouette
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette'],DataSourceInfo.DisplayName,"Silhouette")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette'], DataSourceInfo.MaxLength, "Silhouette")
+            Required: =true
+            Update: =DataCardValue19.Text
+            Width: =296
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+            DataCardKey20 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue19 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue19.Y + DataCardValue19.Height
+                ZIndex: =3
+
+        "'Silhouette Code_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette_x0020_Code"
+            Default: =ThisItem.'Silhouette Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette'],DataSourceInfo.DisplayName,"Silhouette_x0020_Code")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette'], DataSourceInfo.MaxLength, "Silhouette_x0020_Code")
+            Required: =true
+            Update: =DataCardValue22.Text
+            Width: =296
+            X: =0
+            Y: =1
+            ZIndex: =3
+
+            DataCardKey23 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue22 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =52
+                ZIndex: =2
+
+            ErrorMessage23 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue22.Y + DataCardValue22.Height
+                ZIndex: =3
+
+    FormSilhouettePart As form:
+        BorderThickness: =1
+        DataSource: ='Master Style - Silhouette Part'
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =570
+        NumberOfColumns: =1
+        Width: =297
+        X: =699
+        Y: =139
+        ZIndex: =5
+
+        "'Silhouette Part_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette_x0020_Part"
+            Default: =ThisItem.'Silhouette Part'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette Part'],DataSourceInfo.DisplayName,"Silhouette_x0020_Part")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette Part'], DataSourceInfo.MaxLength, "Silhouette_x0020_Part")
+            Required: =true
+            Update: =DataCardValue25.Text
+            Width: =296
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            DataCardKey26 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue25 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                ZIndex: =2
+
+            ErrorMessage26 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue25.Y + DataCardValue25.Height
+                ZIndex: =3
+
+        "'Silhouette Part Code_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette_x0020_Part_x0020_Code"
+            Default: =ThisItem.'Silhouette Part Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette Part'],DataSourceInfo.DisplayName,"Silhouette_x0020_Part_x0020_Code")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette Part'], DataSourceInfo.MaxLength, "Silhouette_x0020_Part_x0020_Code")
+            Required: =false
+            Update: =DataCardValue26.Text
+            Width: =296
+            X: =0
+            Y: =1
+            ZIndex: =6
+
+            DataCardKey27 As label:
+                AutoHeight: =true
+                Fill: =RGBA(202, 202, 202, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =15
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue26 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                ZIndex: =2
+
+            ErrorMessage27 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue26.Y + DataCardValue26.Height
+                ZIndex: =3
+
+            StarVisible27 As label:
+                Align: =Align.Center
+                Height: =DataCardKey27.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey27.Y
+                ZIndex: =4
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =5
+
+        Button5 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =ResetForm(FormSilhouette);NewForm(FormSilhouette)
+            Size: =13
+            Text: ="Add New"
+            Width: =92
+            X: =75
+            Y: =362
+            ZIndex: =3
+
+        Button5_1 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =SubmitForm(FormSilhouette);NewForm(FormSilhouette);Refresh('Master Style - Silhouette')
+            Size: =13
+            Text: ="Save"
+            Width: =92
+            X: =213
+            Y: =362
+            ZIndex: =4
+
+    "GallerySilhouette_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderThickness: =1
+        Height: =570
+        Items: ='Master Style - Silhouette Part'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =66
+        Width: =333
+        X: =996
+        Y: =139
+        ZIndex: =8
+
+        Title2_1 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            FontWeight: =FontWeight.Normal
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.'Silhouette Part'
+            Width: =200
+            X: =14
+            Y: =13
+            ZIndex: =1
+
+        Subtitle3_1 As label:
+            Align: =Align.Center
+            Fill: =RGBA(187, 221, 140, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.'Silhouette Part Code'
+            Width: =44
+            X: =224
+            Y: =13
+            ZIndex: =2
+
+        NextArrow2_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Master Style - Silhouette Part',ThisItem)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    Group6_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =8
+
+        Button5_2 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =ResetForm(FormSilhouettePart);NewForm(FormSilhouettePart)
+            Size: =13
+            Text: ="Add New"
+            Width: =92
+            X: =738
+            Y: =362
+            ZIndex: =6
+
+        Button5_3 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =SubmitForm(FormSilhouettePart);NewForm(FormSilhouettePart);Refresh('Master Style - Silhouette Part')
+            Size: =13
+            Text: ="Save"
+            Width: =92
+            X: =867
+            Y: =362
+            ZIndex: =7
+
+    Label1_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(3, 130, 113, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =20
+        Text: ="Add Silhouette"
+        Width: =630
+        X: =42
+        Y: =94
+        ZIndex: =9
+
+    Label1_5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(3, 130, 113, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =20
+        Text: ="Add Silhouette Part"
+        Width: =630
+        X: =699
+        Y: =94
+        ZIndex: =10
+
+    Icon4_1 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(ACCESS)
+        Width: =35
+        X: =55
+        Y: =33
+        ZIndex: =15
+
+    DigitalizationImages_1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =15
+
+        Image3_2 As image:
+            DisplayMode: =DisplayMode.View
+            Height: =101
+            Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+            Width: =171
+            X: =838
+            ZIndex: =11
+
+        Label2_56 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            Size: =12
+            Text: ="Designed by "
+            Visible: = true
+            X: =1179
+            Y: =688
+            ZIndex: =12
+
+        Label2_55 As label:
+            Align: =Align.Right
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            Text: ="IE DIGITALIZATION"
+            Width: =180
+            X: =1147
+            Y: =718
+            ZIndex: =13
+
+        Label2_54 As label:
+            Align: =Align.Right
+            Color: =RGBA(179, 179, 179, 1)
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            Size: =16
+            Text: ="ACTIVE Linea Intimo - IE"
+            Width: =270
+            X: =1009
+            Y: =43
+            ZIndex: =14
+
+    Icon4_6 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate('CREATE NEW CHASSI CODE_2')
+        Width: =35
+        X: =103
+        Y: =33
+        ZIndex: =16
+
+    Icon4_8 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.Home
+        OnSelect: =Navigate(ACCESS)
+        Width: =35
+        X: =156
+        Y: =33
+        ZIndex: =17
+
+    Icon5_12 As icon.CancelBadge:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1290
+        Y: =20
+        ZIndex: =18
+

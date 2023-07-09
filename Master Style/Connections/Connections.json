@@ -1,0 +1,47 @@
+{
+  "a38535ec-8f14-4ce8-af00-f5fba3ea752b": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://massl.sharepoint.com/sites/LineaIntimo/IEDigitalization": {
+        "dataSources": {
+          "IE Department Name list": {
+            "tableName": "e04ed66a-917d-4753-9d49-b3e9d545da5c"
+          },
+          "Master Style - Index": {
+            "tableName": "c47bcfd5-a681-464e-9a67-7f27ab7d1a07"
+          },
+          "Master Style - Silhouette": {
+            "tableName": "f1f4159b-9197-4ff2-a082-151ae4402591"
+          },
+          "Master Style - Silhouette Part": {
+            "tableName": "0dd67585-c919-4170-8764-7db8a094046a"
+          },
+          "Master Style - Silhouette/Part/Operation": {
+            "tableName": "867ea7dd-d18a-4eeb-bb27-5b268c4eb675"
+          },
+          "Sewing SMV validation in MAS Seamless": {
+            "tableName": "e8d8bf50-fa95-4577-9f86-fd3cf1cd1667"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Sewing SMV validation in MAS Seamless",
+      "IE Department Name list",
+      "Master Style - Silhouette",
+      "Master Style - Silhouette Part",
+      "Master Style - Index",
+      "Master Style - Silhouette/Part/Operation"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a38535ec-8f14-4ce8-af00-f5fba3ea752b"
+  }
+}

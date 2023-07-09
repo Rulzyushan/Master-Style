@@ -1,0 +1,494 @@
+"'CREATE NEW CHASSI CODE_3' As screen":
+    Fill: =RGBA(153, 160, 196, 1)
+
+    Label1_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(102, 102, 102, 1)
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =25
+        Text: ="Chassis Code"
+        Width: =1292
+        X: =40
+        Y: =20
+        ZIndex: =1
+
+    Label1_9 As label:
+        Align: =Align.Center
+        BorderThickness: =1
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(3, 130, 113, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =20
+        Text: ="Add Operation"
+        Width: =1290
+        X: =42
+        Y: =94
+        ZIndex: =4
+
+    FormSilhouetteOperation As form:
+        BorderThickness: =1
+        DataSource: ='Master Style - Silhouette/Part/Operation'
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =571
+        NumberOfColumns: =1
+        Width: =417
+        X: =42
+        Y: =138
+        ZIndex: =5
+
+        Silhouette_DataCard3 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette"
+            Default: =ThisItem.Silhouette
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'],DataSourceInfo.DisplayName,"Silhouette")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue53.Selected
+            Width: =416
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue53 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Silhouette/Part/Operation'].Silhouette)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Silhouette/Part/Operation'.Silhouette,DataCardValue53.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+            ErrorMessage54 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue53.Y + DataCardValue53.Height
+                ZIndex: =3
+
+            StarVisible54 As label:
+                Align: =Align.Center
+                Height: =DataCardKey54.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey54.Y
+                ZIndex: =4
+
+        "'Silhouette Part_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Silhouette_x0020_Part"
+            Default: =ThisItem.'Silhouette Part'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'],DataSourceInfo.DisplayName,"Silhouette_x0020_Part")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue54.Selected
+            Width: =416
+            X: =0
+            Y: =1
+            ZIndex: =6
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue54 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Master Style - Silhouette/Part/Operation'].'Silhouette Part')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Master Style - Silhouette/Part/Operation'.'Silhouette Part',DataCardValue54.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+            ErrorMessage55 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue54.Y + DataCardValue54.Height
+                ZIndex: =3
+
+            StarVisible55 As label:
+                Align: =Align.Center
+                Height: =DataCardKey55.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey55.Y
+                ZIndex: =4
+
+        Operation_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Operation"
+            Default: =ThisItem.Operation
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'],DataSourceInfo.DisplayName,"Operation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'], DataSourceInfo.MaxLength, "Operation")
+            Required: =true
+            Update: =DataCardValue55.Text
+            Width: =416
+            X: =0
+            Y: =2
+            ZIndex: =6
+
+            DataCardKey56 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                ZIndex: =2
+
+            ErrorMessage56 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue55.Y + DataCardValue55.Height
+                ZIndex: =3
+
+            StarVisible56 As label:
+                Align: =Align.Center
+                Height: =DataCardKey56.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey56.Y
+                ZIndex: =4
+
+        "'Operation Code_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Operation_x0020_Code"
+            Default: =ThisItem.'Operation Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'],DataSourceInfo.DisplayName,"Operation_x0020_Code")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Master Style - Silhouette/Part/Operation'], DataSourceInfo.MaxLength, "Operation_x0020_Code")
+            Required: =true
+            Update: =DataCardValue56.Text
+            Width: =416
+            X: =0
+            Y: =3
+            ZIndex: =6
+
+            DataCardKey57 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue56 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                ZIndex: =2
+
+            ErrorMessage57 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue56.Y + DataCardValue56.Height
+                ZIndex: =3
+
+            StarVisible57 As label:
+                Align: =Align.Center
+                Height: =DataCardKey57.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey57.Y
+                ZIndex: =4
+
+    DataTableOperation As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(219, 219, 219, 1)
+        HeadingFontWeight: =FontWeight.Semibold
+        Height: =571
+        Items: |-
+            =Sort(
+            If(!IsBlank(DataCardValue54.Selected.Value),
+            Filter(TestDataSilhouetteOperation,DataCardValue53.Selected.Value = Silhouette.Value,DataCardValue54.Selected.Value = 'Silhouette Part'.Value),Filter(TestDataSilhouetteOperation,DataCardValue53.Selected.Value = Silhouette.Value)
+            ),
+            'Silhouette Part'.Value,SortOrder.Ascending)
+        SelectedFill: =RGBA(255, 191, 0, 1)
+        Width: =873
+        X: =459
+        Y: =138
+        ZIndex: =8
+
+        Silhouette_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Silhouette"
+            FieldName: ="Silhouette"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Silhouette.Value
+            Width: =149
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Silhouette Part_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Silhouette Part"
+            FieldName: ="Silhouette_x0020_Part"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Silhouette Part'.Value
+            Width: =172
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        Operation_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Operation"
+            FieldName: ="Operation"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Operation
+            Width: =275
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        "'Operation Code_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Operation Code"
+            FieldName: ="Operation_x0020_Code"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Operation Code'
+            Width: =198
+            X: =646
+            Y: =0
+            ZIndex: =11
+
+    Group6_4 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =8
+
+        Button5_7 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =ResetForm(FormSilhouetteOperation);NewForm(FormSilhouetteOperation)
+            Size: =13
+            Text: ="Add New"
+            Width: =92
+            X: =210
+            Y: =652
+            ZIndex: =6
+
+        Button5_5 As button:
+            Fill: =RGBA(102, 113, 166, 1)
+            Height: =45
+            OnSelect: =SubmitForm(FormSilhouetteOperation);NewForm(FormSilhouetteOperation);Refresh('Master Style - Silhouette/Part/Operation')
+            Size: =13
+            Text: ="Save"
+            Width: =92
+            X: =339
+            Y: =652
+            ZIndex: =7
+
+    Icon4_3 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('CREATE NEW CHASSI CODE_2')
+        Width: =35
+        X: =55
+        Y: =33
+        ZIndex: =13
+
+    DigitalizationImages_3 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =13
+
+        Image3_4 As image:
+            DisplayMode: =DisplayMode.View
+            Height: =101
+            Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+            Width: =171
+            X: =829
+            ZIndex: =9
+
+        Label2_62 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            Size: =12
+            Text: ="Designed by "
+            Visible: = true
+            X: =1170
+            Y: =688
+            ZIndex: =10
+
+        Label2_61 As label:
+            Align: =Align.Right
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            Text: ="IE DIGITALIZATION"
+            Width: =180
+            X: =1138
+            Y: =718
+            ZIndex: =11
+
+        Label2_60 As label:
+            Align: =Align.Right
+            Color: =RGBA(179, 179, 179, 1)
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            Size: =16
+            Text: ="ACTIVE Linea Intimo - IE"
+            Width: =270
+            X: =1000
+            Y: =43
+            ZIndex: =12
+
+    Icon4_4 As icon.BackArrow:
+        Height: =35
+        Icon: =Icon.Home
+        OnSelect: =Navigate(ACCESS)
+        Width: =35
+        X: =108
+        Y: =33
+        ZIndex: =14
+
+    Icon5_14 As icon.CancelBadge:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1290
+        Y: =20
+        ZIndex: =15
+
